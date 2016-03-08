@@ -4,7 +4,12 @@ This repository provides the needed files to run a simulation of the UC3M humano
 This package is devoloped for the ROS INDIGO version, any different ROS version may not be supported. For the correct setup of the packages follow the next steps.
 
 1. **Clone** this repository in a catkin_workspace. See this totorial <http://wiki.ros.org/catkin/Tutorials/create_a_workspace> to create a catkin_workspace in ROS.
-2. **Compile** the project with the following commands
+2. Use **rosdep** to install al the needed dependencies. For this you just can run the following command.
+
+	```
+		rosdep install teo_control
+	```
+3. **Compile** the project with the following commands
 
 	```
 		cd "your_catkin_ws_route"
