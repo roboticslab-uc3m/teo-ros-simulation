@@ -33,11 +33,11 @@
 <!-- **** Torso - base_link **** -->
 
 <!-- The robot is attached to the base link "world"-->
-<link name="base_link" />
+<link name="world" />
 
 <!-- **** Fictitious joints **** -->
 <joint name="base_waist" type="fixed">
-  <parent link="base_link"/>
+  <parent link="world"/>
   <child link="waist"/>
   <origin xyz="0 0 0" rpy="0 0 0" />
 </joint>

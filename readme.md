@@ -41,3 +41,8 @@ This package contains the configuration of all the different controllers used du
 
 ###Note
 This package is based in the package presented in the following repository <https://github.com/roboticslab-uc3m/teo_robot>
+
+###TODO 
+- [ ] Fix the visual elements of the robot.
+- [ ] Unify robot model (see <http://robots.uc3m.es/index.php/TEO>)
+- [ ] Tune the control to allow the robot to stand up by it's own.

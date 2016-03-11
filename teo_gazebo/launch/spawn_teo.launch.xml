@@ -11,9 +11,16 @@
   <arg name="robot_initial_pose/pitch" default="0.0"/>
   <arg name="robot_initial_pose/yaw" default="0.0"/>
 
+  <arg name="attach" default="1" />
+
   <!-- Robot Description -->
   <!-- There is a problem with conditionals in xacro, for this reason the conditional is done here 20/08/2014 -->
-  <param name="robot_description" command="$(find xacro)/xacro.py $(find teo_description)/robots/teo_humanoid.urdf.xacro" /> 
+  <group if="$(arg attach)"> <!-- attached urdf version -->
+    <param name="robot_description" command="$(find xacro)/xacro.py $(find teo_description)/robots/teo_humanoid_attach.urdf.xacro" />  
+  </group>
+  <group unless="$(arg attach)">
+    <param name="robot_description" command="$(find xacro)/xacro.py $(find teo_description)/robots/teo_humanoid.urdf.xacro" /> 
+  </group>
 
 
   <node pkg="gazebo_ros" type="spawn_model" name="spawn_$(arg robot_name)" args="-param robot_description 

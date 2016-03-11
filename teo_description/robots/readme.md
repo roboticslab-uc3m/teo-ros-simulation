@@ -5,7 +5,7 @@ The initial design of the model of this robot has been done in a urdf.xacro form
  **urdf.xacro -> urdf**
 
 ```
-	rosrun xacro xacro.py -o teo.urdf teo_humanoid.urdf.xacro
+	rosrun xacro xacro.py -o teo.urdf teo_humanoid_attach.urdf.xacro
 ```
 
 **urdf -> sdf**

@@ -18,6 +18,9 @@
   <arg name="robot_initial_pose/pitch" default="0.0"/>
   <arg name="robot_initial_pose/yaw" default="0.0"/>
 
+  <!-- Arguments for Xacro, 0=unattached version, 1=attached to world -->
+  <arg name="attach" default="1" /> <!-- Visualization of TEO -->
+
   <!-- Gazebo World -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="use_sim_time" value="$(arg use_sim_time)"/>
@@ -41,6 +44,7 @@
     <arg name="robot_initial_pose/roll" value="$(arg robot_initial_pose/roll)"/>
     <arg name="robot_initial_pose/pitch" value="$(arg robot_initial_pose/pitch)"/>
     <arg name="robot_initial_pose/yaw" value="$(arg robot_initial_pose/yaw)"/>
+    <arg name="attach" value="$(arg attach)"/>
   </include>
 
 
