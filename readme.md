@@ -45,4 +45,4 @@ This package is based in the package presented in the following repository <http
 ###TODO 
 - [ ] Fix the visual elements of the robot.
 - [ ] Unify robot model (see <http://robots.uc3m.es/index.php/TEO>)
-- [ ] Tune the control to allow the robot to stand up by it's own.
+- [ ] Add an imu sensor or any other type of localization, to be able to reference the robot in the world, i.e. to publish the base_link<->world tf.
