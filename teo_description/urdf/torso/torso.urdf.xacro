@@ -21,21 +21,21 @@
 <!-- Link lengths -->
 	<xacro:property name="waist_link1" value="0.0" />
 	<!--xacro:property name="waist_link2" value="0.287" /-->
-	<xacro:property name="waist_link2" value="0.19070" />
+	<xacro:property name="waist_link2" value="0.1932" />
 	<xacro:property name="torso_link1" value="0.0" />
-	<!--xacro:property name="torso_link2" value="0.06" /-->
 	<xacro:property name="torso_link2" value="0.06" />
-  <xacro:property name="chest_link1" value="0.0" />
-  <xacro:property name="chest_link2" value="0.245" />
+  	<xacro:property name="chest_link1" value="0.0" />
+  	<xacro:property name="chest_link2" value="0.245" />
+	<xacro:property name="chest_link" value="0.305" /> 
 
 
 <!-- Minimum angles -->
 	<xacro:property name="waist_yaw_lower" value="${-45 * deg_to_rad}" />
-  <xacro:property name="waist_pitch_lower" value="${-45 * deg_to_rad}" />
+  <xacro:property name="waist_pitch_lower" value="${-10 * deg_to_rad}" />
 
 <!-- Maximum angles -->
-	<xacro:property name="waist_yaw_upper" value="${30 * deg_to_rad}" />
-	<xacro:property name="waist_pitch_upper" value="${30 * deg_to_rad}" />
+	<xacro:property name="waist_yaw_upper" value="${45 * deg_to_rad}" />
+	<xacro:property name="waist_pitch_upper" value="${10 * deg_to_rad}" />
 
 <!-- Effort limit of the angles -->
 	<xacro:property name="waist_yaw_effort" value="30.0" />
@@ -116,8 +116,8 @@
 
   <link name="waist_pitch_link" >
     <inertial>
-      <origin xyz="0.0 0.0 0.221233" rpy="0 0 0"/>
-      <!-- <origin xyz="0.038788 -0.000008 0.221233" rpy="0 0 0"/> -->
+      <origin xyz="0.038788 -0.000008 0.221233" rpy="0 0 0"/>
+      <!-- <origin xyz="0.0 -0.0 0.221233" rpy="0 0 0"/> -->
       <mass value="1.0"/>
       <!-- <inertia
         ixx="0.3563817" ixy="-5.5E-6" ixz="-0.014295"

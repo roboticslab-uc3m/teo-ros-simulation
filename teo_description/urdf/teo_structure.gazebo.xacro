@@ -33,6 +33,26 @@
 
 	</xacro:macro>
 
+	<!-- ############### -->
+	<!-- # HEAD LINKS # -->
+	<!-- ############### -->
+
+  <xacro:macro name="gazebo_head" params="">
+		<gazebo reference="head_yaw_link">
+			<mu1>0.9</mu1>
+			<mu2>0.9</mu2>
+			<!-- <material>Gazebo/White</material> -->
+		</gazebo>
+
+		<gazebo reference="head_pitch_link">
+			<mu1>0.9</mu1>
+			<mu2>0.9</mu2>
+			<!-- <material>Gazebo/White</material> -->
+		</gazebo>
+
+	</xacro:macro>
+
+
 	<!-- ############## -->
 	<!-- # LEGS LINKS # -->
 	<!-- ############## -->

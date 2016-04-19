@@ -44,5 +44,5 @@ This package is based in the package presented in the following repository <http
 
 ###TODO 
 - [ ] Fix the visual elements of the robot.
-- [ ] Unify robot model (see <http://robots.uc3m.es/index.php/TEO>)
+- [X] Unify robot model (see <http://robots.uc3m.es/index.php/TEO>)
 - [ ] Add an imu sensor or any other type of localization, to be able to reference the robot in the world, i.e. to publish the base_link<->world tf.

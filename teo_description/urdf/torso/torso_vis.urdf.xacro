@@ -83,34 +83,8 @@
         <mesh filename="package://teo_description/meshes/torso/R-torso-shoulder.stl"/>
       </geometry>
     </collision>
-    <visual>
-      <origin xyz="0 0 0.346" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="package://teo_description/meshes/torso/neck.stl"/>
-      </geometry>
-      <material name="LightGrey"/>
-    </visual>
-    <collision>
-      <origin xyz="0 0 0.346" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="package://teo_description/meshes/torso/neck.stl"/>
-      </geometry>
-    </collision>
-    <visual>
-      <origin xyz="0 0 0.434" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="package://teo_description/meshes/torso/head.stl"/>
-      </geometry>
-      <material name="LightGrey"/>
-    </visual>
-    <collision>
-      <origin xyz="0 0 0.434" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="package://teo_description/meshes/torso/head.stl"/>
-      </geometry>
-    </collision>
-  </xacro:macro>
-
+    </xacro:macro>
+    
   <xacro:macro name="insert_visualization_waist" params="">
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>

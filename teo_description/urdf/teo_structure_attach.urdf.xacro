@@ -44,6 +44,7 @@
 
  <!-- Definitions of parts of the robot body -->
  <xacro:include filename="$(find teo_description)/urdf/torso/torso.urdf.xacro" />
+ <xacro:include filename="$(find teo_description)/urdf/head/head.urdf.xacro" />
  <xacro:include filename="$(find teo_description)/urdf/legs/leg.urdf.xacro" />
  <xacro:include filename="$(find teo_description)/urdf/arms/arm.urdf.xacro" />
 
@@ -57,6 +58,7 @@
   <xacro:include filename="$(find teo_description)/urdf/teo_structure.gazebo.xacro" />
 
   <xacro:gazebo_torso/>
+  <xacro:gazebo_head/>
   <xacro:gazebo_legs_links side="l" reflect="1"/>
   <xacro:gazebo_legs_links side="r" reflect="-1"/>
   <xacro:gazebo_arms_links side="l" reflect="1"/>
