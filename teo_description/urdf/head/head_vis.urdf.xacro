@@ -16,7 +16,7 @@
       <geometry>
         <mesh filename="package://teo_description/meshes/head/neck.stl"/>
       </geometry>
-      <material name="LightGrey"/>
+      <material name="teoGray"/>
     </visual>
     <collision>
       <origin xyz="0 0 0.041" rpy="0 0 0"/>
@@ -32,7 +32,7 @@
       <geometry>
         <mesh filename="package://teo_description/meshes/head/head.stl"/>
       </geometry>
-      <material name="LightGrey"/>
+      <material name="teoGray"/>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
