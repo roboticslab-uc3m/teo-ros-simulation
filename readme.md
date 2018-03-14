@@ -1,6 +1,8 @@
 # teo-ros-simulation
 This repository provides the needed files to run a simulation of the UC3M humanoid robot TEO in ros.
-##Installation steps
+
+## Installation steps
+
 This package is devoloped for the ROS INDIGO version, any different ROS version may not be supported. For the correct setup of the packages follow the next steps.
 
 1. **Clone** this repository in a catkin_workspace. See this totorial <http://wiki.ros.org/catkin/Tutorials/create_a_workspace> to create a catkin_workspace in ROS.
