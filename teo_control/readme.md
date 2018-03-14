@@ -1,6 +1,6 @@
 # teo_control
 
-This package contains the configuration of all the different controllers used during the simulation, and the launch files for it's initialization. It uses ros_control with this porpouse. For a deeper understanding about how this is done take a look to the teo_control package documentation.
+This package contains the configuration of all the different controllers used during the simulation, and the launch files for it's initialization. It uses ros_control with this porpouse. 
 
 ## How it works
 
